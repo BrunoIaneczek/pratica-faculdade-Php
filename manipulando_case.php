@@ -21,5 +21,18 @@
     <?php
         echo ucfirst($variavelCasemisturado);
     ?>
+    <h2>Substituiçao de string em PHP</h2>
+    <?php
+        $variavelTextooriginal = "A diciplina de algoritmos é legal<br/>";
+        
+        $variavelTextoAlterado = str_replace("Algoritmos","programação web I",$variavelTextooriginal);
+        echo $variavelTextoAlterado;
+    ?>
+    <h2>Obtendo tamanho da string</h2>
+    <?php
+        $nomeBonito = "PHP";
+        $tamanho = strlen($nomeBonito);
+        echo "O nome ".$nomeBonito." tem ".$tamanho." letras.";
+    ?>
 </body>
 </html>
